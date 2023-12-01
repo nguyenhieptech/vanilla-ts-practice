@@ -1,0 +1,30 @@
+<!-- https://github.com/mdn/dom-examples/tree/main/web-workers/simple-web-worker -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Workers</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <h1>Web Workers basic example</h1>
+    <div class="controls" tabindex="0">
+      <form>
+        <div>
+          <label for="number1">Multiply number 1: </label>
+          <input type="text" id="number1" value="0" />
+        </div>
+        <div>
+          <label for="number2">Multiply number 2: </label>
+          <input type="text" id="number2" value="0" />
+        </div>
+      </form>
+
+      <p class="result">Result: 0</p>
+    </div>
+    <script defer type="module" src="/src/web-apis/workers/web-worker.ts"></script>
+  </body>
+</html>
